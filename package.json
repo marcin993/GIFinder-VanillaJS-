@@ -1,0 +1,26 @@
+{
+  "name": "",
+  "version": "",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "keywords": [],
+  "author": "Marcin Lasecki",
+  "license": "",
+  "devDependencies": {
+    "browser-sync": "^2.18.6",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.3.2",
+    "gulp-group-css-media-queries": "^1.2.0",
+    "gulp-run-sequence": "^0.3.2",
+    "gulp-sass": "^3.0.0",
+    "open-color": "^1.4.2"
+  },
+  "dependencies": {}
+}

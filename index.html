@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>GIFinder</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+</head>
+<body>
+    <div class="preloader flex">
+        <i class="fa-circle-o-notch animate-spin fa-3x"></i>
+        <span class="sr-only">Loading...</span>
+    </div>
+    <!---
+    <div class="play flex">
+        <i class="fa-times" aria-hidden="true"></i>
+        <video class="gif" src="http://media2.giphy.com/media/Dgt282fuOmSnC/giphy-downsized-small.mp4" autoplay loop></video>
+        <div class="share">
+            <label for="directLink">Skopiuj link</label><br>
+            <input class="form-control" id="directLink" type="url" value="http://giphy.com/gifs/dog-computer-wpoLqr5FT1sY0/"><br>
+            <p>lub</p>
+            <a href="#" class="open-giphy">Otwórz w Giphy.com</a>
+        </div>
+    </div>
+    ---->
+    <header>
+        <div class="max-width flex">
+            <div class="brand">
+                <p><span class="logo-part">GIF</span>inder</p>
+            </div>
+            <div class="nav-toggle">
+                <i class="fa-bars" aria-hidden="true"></i>
+            </div>
+            <nav class="flex">
+                <i class="fa-times" aria-hidden="true"></i>
+                <table class="settings-table">
+                    <tr>
+                        <td>Wyników na stronę:</td>
+                        <td><input type="text" class="form-control" id="resultsNumber" value="13"></td>
+                    </tr>
+                    <tr>
+                        <td>Tag startowy:</td>
+                        <td><input type="text" class="form-control" id="startTag"></td>
+                    </tr>
+                    <tr>
+                        <td>Jednostka rozmiaru gifa:</td>
+                        <td>
+                            <select id="sizeUnit">
+                                <option>MB</option>
+                                <option selected>KB</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Domyślny język wyszukiwania:</td>
+                        <td>
+                            <select id="searchLanguage">
+                                <option>Brak</option>
+                                <option>Arabski</option>
+                                <option>Bengalski</option>
+                                <option>Chiński (tradycyjny)</option>
+                                <option>Chiński (uproszczony)</option>
+                                <option>Czeski</option>
+                                <option>Duński</option>
+                                <option>Filipiński</option>
+                                <option>Fiński</option>
+                                <option>Francuski</option>
+                                <option>Hebrajski</option>
+                                <option>Hindi</option>
+                                <option>Hiszpański</option>
+                                <option>Indonezyjski</option>
+                                <option>Japoński</option>
+                                <option>Koreański</option>
+                                <option>Malajski</option>
+                                <option>Niderlandzki</option>
+                                <option>Niemiecki</option>
+                                <option>Norweski</option>
+                                <option>Perski</option>
+                                <option>Polski</option>
+                                <option>Portugalski</option>
+                                <option>Rosyjski</option>
+                                <option>Rumuński</option>
+                                <option>Szwedzki</option>
+                                <option>Tajski</option>
+                                <option>Turecki</option>
+                                <option>Ukraiński</option>
+                                <option>Węgierski</option>
+                                <option>Wietnamski</option>
+                                <option>Włoski</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Kolorystka:</td>
+                        <td>
+                            <input type="color" value="#087f5b" class="form-control" id="appColor">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button class="nostyle-btn" id="defaultSettings">
+                                <i class="fa-wrench" aria-hidden="true"></i> Przywróć domyślne ustawienia
+                            </button>
+                            <button class="nostyle-btn" id="clearHistory">
+                                <i class="fa-history" aria-hidden="true"></i> Wyczyść historię wyszukiwania
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="search">
+            <input class="form-control search-input" type="text" placeholder="Czego szukamy?">
+            <!---
+            <div class="hints flex">
+                <div class="hint flex">
+                    <p>kebab</p>
+                    <i class="fa-close" aria-hidden="true"></i>
+                </div>
+                <div class="hint flex">
+                    <p>pizza</p>
+                    <i class="fa-close" aria-hidden="true"></i>
+                </div>
+                <div class="hint flex">
+                    <p>zapiekanki</p>
+                    <i class="fa-close" aria-hidden="true"></i>
+                </div>
+                <div class="hint flex">
+                    <p>koty</p>
+                    <i class="fa-close" aria-hidden="true"></i>
+                </div>
+                <div class="hints-footer">
+                    <p><i class="fa-close" aria-hidden="true"></i> Wyczyść wszystko...</p>
+                </div>
+            </div>
+            --->
+        </section>
+        <section class="results flex"></section>
+        <!---
+        <div class="message">
+            <p class="success"><span class="bold">Hurra!</span> Operacja udana! <i class="fa-window-close" aria-hidden="true"></i></p>
+            <p class="error"><span class="bold">Upsss...</span> Wystąpił błąd! <i class="fa-window-close" aria-hidden="true"></i></p>
+        </div>
+        --->
+    </main>
+    <footer>
+        <div class="max-width">
+            <p><span class="logo-part">GIF</span>inder &copy; 2017</p>
+            <p>Powered by <a href="https://github.com/Giphy/GiphyAPI">GiphyAPI</a></p>
+        </div>
+    </footer>
+    <script src="js/app.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/promise.min.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+</body>
+</html>
