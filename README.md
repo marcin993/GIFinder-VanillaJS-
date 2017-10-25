@@ -3,10 +3,10 @@
 * [GiphyAPI](https://github.com/Giphy/GiphyAPI)
 
 ## Scripts
-* [Font Awesome](http://fontawesome.io/) & [Fontello](http://fontello.com/)
+* [Font Awesome](http://fontawesome.io) & [Fontello](http://fontello.com)
 * [ES6 Promise Polyfill](https://github.com/stefanpenner/es6-promise)
-* [Prefix free](https://leaverou.github.io/prefixfree/)
-* [Open Color](https://yeun.github.io/open-color/)
+* [Prefix free](https://leaverou.github.io/prefixfree)
+* [Open Color](https://yeun.github.io/open-color/)
 
 Thanks for helpful users [StackOverflow.com](http://stackoverflow.com/) !
 
